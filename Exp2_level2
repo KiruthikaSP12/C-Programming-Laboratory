@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n,a;
+    scanf("%d",&n);
+    a=n%100;
+    while(n>=0 && n<100)
+    {
+        printf("The number should be greater than %d",a);
+        return 0;
+    }
+    printf("0%d",a);
+    return 0;
+}
+
