@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n,a;
+    scanf("%d",&n);
+    a=(n)^2;
+    n=a%n;
+    if(n!=a)
+    {
+        printf("Yes");
+    }
+    else if(n==a)
+    {
+        printf("No");
+    }
+    else
+    {
+        printf("Invalid");
+    }
+    return 0;
+}
