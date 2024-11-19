@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    scanf("%s",a);
+    int i=0;
+    while(a[i]!='\0')
+    {
+        if(a[i]>=65 && a[i]<=91)
+        {
+            a[i]=a[i]+32;
+        }
+        
+        else if(a[i]>=97 && a[i]<=123)
+        {
+            a[i]=a[i]-32;
+        }
+        else
+        {
+            a[i]=a[i];
+        }
+        i++;
+    }
+    printf("%s",a);
+    return 0;
+} 
+
+
